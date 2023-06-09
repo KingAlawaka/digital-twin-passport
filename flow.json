@@ -5,8 +5,19 @@
 			"aliases": {
 			  "testnet": "0x6f81bc683d61b34c"
 			}
+		  },
+		  "BasicNFT":{
+			"source": "./src/flow/candence/contracts/BasicNFT.cdc",
+			"aliases": {
+				"testnet": "0x6f81bc683d61b34c"
+			  }
+		  },
+		  "DTNFT":{
+			"source": "./src/flow/candence/contracts/DTNFT.cdc",
+			"aliases": {
+				"testnet": "0x6f81bc683d61b34c"
+			  }
 		  }
-		
 	}
 	,"networks": {
 		"emulator": "127.0.0.1:3569",
@@ -28,12 +39,35 @@
 			  "hashAlgorithm": "SHA3_256",
 			  "privateKey": "626b6b61a222977efd1d99f3dd04d67d7ed444a774d666f4d9cbcaf02299a6cf"
 			}
+		  },
+		  "com-1": {
+			"address": "0x300914add116a673",
+			"key": {
+			  "type": "hex",
+			  "index": 0,
+			  "signatureAlgorithm": "ECDSA_P256",
+			  "hashAlgorithm": "SHA3_256",
+			  "privateKey": "a0e2bb47786a0e2fede2397bcc457d110d8f8c9cac86336cacf3ca1f31f5644a"
+			}
+		  },
+		  "com-2": {
+			"address": "0x2b4d90be28647eab",
+			"key": {
+			  "type": "hex",
+			  "index": 0,
+			  "signatureAlgorithm": "ECDSA_P256",
+			  "hashAlgorithm": "SHA3_256",
+			  "privateKey": "fa50eac4f9ba4e51ca2744341207e62b801a941195a3ced1f646f8e021433acf"
+			}
 		  }
+
 	},
 	  "deployments": {
 		"testnet": {
 		  "testnet-account": [
-			"HelloWorld"
+			"HelloWorld",
+			"BasicNFT",
+			"DTNFT"
 		  ]
 		}
 	  }
